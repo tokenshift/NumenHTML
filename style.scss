@@ -1,0 +1,82 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+
+	&.print .noprint {
+		display: none;
+	}
+}
+
+.actions {
+	bottom: 0;
+	left: 0;
+	padding: 0.5em;
+	position: fixed;
+	width: 100%;
+}
+
+#page1, #page2 {
+	background-size: 100% 100%;
+	margin: auto;
+	page-break-after: always;
+	position: relative;
+}
+
+#page1 {
+	background-image: inline-image('Page1.jpg');
+}
+
+#page2 {
+	background-image: inline-image('Page2.jpg');
+}
+
+.field, .select-portrait, .portrait {
+	position: absolute;
+}
+
+.portrait {
+	background-image: inline-image('portrait_placeholder.png');
+}
+
+.field {
+	background-color: rgba(128, 128, 255, 0.1);
+
+	&:hover, &:focus {
+		background-color: rgba(128, 128, 255, 0.3);
+	}
+
+	&.rounded {
+		border-radius: 5px;
+	}
+
+	&.check {
+		border-radius: 50%;
+		display: inline-block;
+
+		&.checked {
+			background-image: inline-image('check.png');
+			background-position: top right;
+			background-repeat: no-repeat;
+			background-size: 80%;
+		}
+	}
+
+	&.text {
+		padding: 0.1em 0.2em;
+	}
+}
+
+.print .field, .print .field:hover, .print .field:focus {
+	background-color: transparent;
+}
+
+.portrait {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@page {
+	margin: 0;
+	size: 11in 8.5in;
+}

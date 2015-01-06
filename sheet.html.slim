@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Numenera Character Sheet
+    style type="text/css"
+      == File.read "style.css"
+  body
+    #page1
+      span.text.field.name.set-position data-bottom="2119" data-left="2510" data-width="545" contenteditable="true" tabindex="0" Character Name
+      span.text.field.descriptor.set-position data-bottom="2000" data-left="2510" data-width="535" contenteditable="true" tabindex="0" Descriptor
+      span.text.field.type.set-position data-bottom="1895" data-left="2650" data-width="280" contenteditable="true" tabindex="0" Type
+      span.text.field.focus.set-position data-bottom="1775" data-left="2480" data-width="670" contenteditable="true" tabindex="0" Focus
+      input.select-portrait.noprint.set-position type="file" data-bottom="180" data-left="2250"
+      div.portrait.set-position data-top="1250" data-left="2250" data-width="940" data-height="1000"
+
+    #page2
+      span.text.field.rounded.might-skill-1.set-position data-bottom="2302" data-left="123" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.might-skill-1-trained.set-position data-bottom="2310" data-left="633" data-width="57" data-height="55" tabindex="0"
+      span.check.field.might-skill-1-specialized.set-position data-bottom="2310" data-left="701" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.might-skill-2.set-position data-bottom="2228" data-left="108" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.might-skill-2-trained.set-position data-bottom="2236" data-left="619" data-width="57" data-height="55" tabindex="0"
+      span.check.field.might-skill-2-specialized.set-position data-bottom="2236" data-left="680" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.might-skill-3.set-position data-bottom="2155" data-left="120" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.might-skill-3-trained.set-position data-bottom="2163" data-left="627" data-width="57" data-height="55" tabindex="0"
+      span.check.field.might-skill-3-specialized.set-position data-bottom="2163" data-left="693" data-width="57" data-height="55" tabindex="0"
+
+    .actions.noprint
+      a href="?print=true" target="_blank" Print
+      button.save Save
+
+    script type="text/javascript"
+      == File.read "sheet.min.js"
