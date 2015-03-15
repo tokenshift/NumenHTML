@@ -64,6 +64,22 @@ body {
 	&.text {
 		padding: 0.1em 0.2em;
 	}
+
+	&.multiline {
+		line-height: 143%;
+
+		&#cyphers {
+			line-height: 146%;
+		}
+	}
+
+	&.circle {
+		border-radius: 50%;
+	}
+
+	&.centered {
+		text-align: center;
+	}
 }
 
 .print .field, .print .field:hover, .print .field:focus {

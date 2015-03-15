@@ -6,25 +6,120 @@ html
       == File.read "style.css"
   body
     #page1
+      // Fluff
+      span.text.field.multiline.set-position#background data-bottom="100" data-left="70" data-width="930" data-height="2220" contenteditable="true" tabindex="0"
+      span.text.field.multiline.set-position#background data-bottom="100" data-left="1150" data-width="820" data-height="2220" contenteditable="true" tabindex="0"
+
+      // Character Info
       span.text.field.name.set-position data-bottom="2119" data-left="2510" data-width="545" contenteditable="true" tabindex="0" Character Name
-      span.text.field.descriptor.set-position data-bottom="2000" data-left="2510" data-width="535" contenteditable="true" tabindex="0" Descriptor
+      span.text.field.descriptor.set-position data-bottom="2000" data-left="2513" data-width="535" contenteditable="true" tabindex="0" Descriptor
       span.text.field.type.set-position data-bottom="1895" data-left="2650" data-width="280" contenteditable="true" tabindex="0" Type
       span.text.field.focus.set-position data-bottom="1775" data-left="2480" data-width="670" contenteditable="true" tabindex="0" Focus
+
+      // Character Portrait
       input.select-portrait.noprint.set-position type="file" data-bottom="180" data-left="2250"
       div.portrait.set-position data-top="1250" data-left="2250" data-width="940" data-height="1000"
 
     #page2
-      span.text.field.rounded.might-skill-1.set-position data-bottom="2302" data-left="123" data-width="450" contenteditable="true" tabindex="0"
-      span.check.field.might-skill-1-trained.set-position data-bottom="2310" data-left="633" data-width="57" data-height="55" tabindex="0"
-      span.check.field.might-skill-1-specialized.set-position data-bottom="2310" data-left="701" data-width="57" data-height="55" tabindex="0"
+      // Might Skills
+      span.text.field.rounded.set-position#might-skill-1 data-bottom="2302" data-left="123" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#might-skill-1-trained data-bottom="2310" data-left="633" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#might-skill-1-specialized data-bottom="2310" data-left="701" data-width="57" data-height="55" tabindex="0"
 
-      span.text.field.rounded.might-skill-2.set-position data-bottom="2228" data-left="108" data-width="450" contenteditable="true" tabindex="0"
-      span.check.field.might-skill-2-trained.set-position data-bottom="2236" data-left="619" data-width="57" data-height="55" tabindex="0"
-      span.check.field.might-skill-2-specialized.set-position data-bottom="2236" data-left="680" data-width="57" data-height="55" tabindex="0"
+      span.text.field.rounded.set-position#might-skill-2 data-bottom="2228" data-left="108" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#might-skill-2-trained data-bottom="2236" data-left="619" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#might-skill-2-specialized data-bottom="2236" data-left="680" data-width="57" data-height="55" tabindex="0"
 
-      span.text.field.rounded.might-skill-3.set-position data-bottom="2155" data-left="120" data-width="450" contenteditable="true" tabindex="0"
-      span.check.field.might-skill-3-trained.set-position data-bottom="2163" data-left="627" data-width="57" data-height="55" tabindex="0"
-      span.check.field.might-skill-3-specialized.set-position data-bottom="2163" data-left="693" data-width="57" data-height="55" tabindex="0"
+      span.text.field.rounded.set-position#might-skill-3 data-bottom="2155" data-left="120" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#might-skill-3-trained data-bottom="2163" data-left="627" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#might-skill-3-specialized data-bottom="2163" data-left="693" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#might-skill-4 data-bottom="2085" data-left="145" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#might-skill-4-trained data-bottom="2088" data-left="653" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#might-skill-4-specialized data-bottom="2088" data-left="718" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#might-skill-4 data-bottom="2010" data-left="195" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#might-skill-4-trained data-bottom="2013" data-left="703" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#might-skill-4-specialized data-bottom="2013" data-left="768" data-width="57" data-height="55" tabindex="0"
+
+      // Speed Skills
+      span.text.field.rounded.set-position#speed-skill-1 data-bottom="1905" data-left="70" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#speed-skill-1-trained data-bottom="1909" data-left="580" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#speed-skill-1-specialized data-bottom="1909" data-left="648" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#speed-skill-2 data-bottom="1829" data-left="53" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#speed-skill-2-trained data-bottom="1835" data-left="566" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#speed-skill-2-specialized data-bottom="1835" data-left="627" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#speed-skill-3 data-bottom="1755" data-left="67" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#speed-skill-3-trained data-bottom="1763" data-left="574" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#speed-skill-3-specialized data-bottom="1763" data-left="640" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#speed-skill-4 data-bottom="1685" data-left="92" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#speed-skill-4-trained data-bottom="1688" data-left="600" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#speed-skill-4-specialized data-bottom="1688" data-left="665" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#speed-skill-4 data-bottom="1611" data-left="142" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#speed-skill-4-trained data-bottom="1614" data-left="650" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#speed-skill-4-specialized data-bottom="1614" data-left="715" data-width="57" data-height="55" tabindex="0"
+
+      // Intellect Skills
+      span.text.field.rounded.set-position#intellect-skill-1 data-bottom="1505" data-left="120" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#intellect-skill-1-trained data-bottom="1509" data-left="630" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#intellect-skill-1-specialized data-bottom="1509" data-left="698" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#intellect-skill-2 data-bottom="1429" data-left="103" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#intellect-skill-2-trained data-bottom="1435" data-left="616" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#intellect-skill-2-specialized data-bottom="1435" data-left="677" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#intellect-skill-3 data-bottom="1355" data-left="117" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#intellect-skill-3-trained data-bottom="1363" data-left="624" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#intellect-skill-3-specialized data-bottom="1363" data-left="690" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#intellect-skill-4 data-bottom="1285" data-left="142" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#intellect-skill-4-trained data-bottom="1288" data-left="650" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#intellect-skill-4-specialized data-bottom="1288" data-left="715" data-width="57" data-height="55" tabindex="0"
+
+      span.text.field.rounded.set-position#intellect-skill-4 data-bottom="1211" data-left="192" data-width="450" contenteditable="true" tabindex="0"
+      span.check.field.set-position#intellect-skill-4-trained data-bottom="1214" data-left="700" data-width="57" data-height="55" tabindex="0"
+      span.check.field.set-position#intellect-skill-4-specialized data-bottom="1214" data-left="765" data-width="57" data-height="55" tabindex="0"
+
+      // Special Abilities
+      span.text.field.multiline.set-position#special-abilities data-bottom="100" data-left="100" data-width="870" data-height="885" contenteditable="true" tabindex="0"
+
+      // Tier etc.
+      span.text.field.set-position.centered#tier data-bottom="2380" data-left="1247" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#effort data-bottom="2380" data-left="1467" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#xp data-bottom="2380" data-left="1687" data-width="100" contenteditable="true" tabindex="0"
+
+      // Pools
+      span.text.field.set-position.centered#might-pool data-bottom="2200" data-left="1680" data-width="80" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#might-edge data-bottom="2110" data-left="1660" data-width="80" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#speed-pool data-bottom="2015" data-left="1680" data-width="80" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#speed-edge data-bottom="1925" data-left="1660" data-width="80" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#intellect-pool data-bottom="1830" data-left="1680" data-width="80" contenteditable="true" tabindex="0"
+      span.text.field.set-position.centered#intellect-edge data-bottom="1740" data-left="1660" data-width="80" contenteditable="true" tabindex="0"
+
+      // Armor & Attacks
+      span.text.field.rounded.centered.set-position#armor data-bottom="580" data-left="1950" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.set-position#attack-1 data-bottom="365" data-left="1450" data-width="330" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-1-mod data-bottom="365" data-left="1842" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-1-dmg data-bottom="365" data-left="1998" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.set-position#attack-2 data-bottom="265" data-left="1450" data-width="330" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-2-mod data-bottom="265" data-left="1842" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-2-dmg data-bottom="265" data-left="1998" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.set-position#attack-3 data-bottom="165" data-left="1450" data-width="330" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-3-mod data-bottom="165" data-left="1842" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-3-dmg data-bottom="165" data-left="1998" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.set-position#attack-4 data-bottom="65" data-left="1450" data-width="330" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-4-mod data-bottom="65" data-left="1842" data-width="100" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#attack-4-dmg data-bottom="65" data-left="1998" data-width="100" contenteditable="true" tabindex="0"
+
+      // Inventory
+      span.multiline.text.field.set-position#cyphers data-bottom="1670" data-left="2350" data-width="650" data-height="730" contenteditable="true" tabindex="0"
+      span.text.field.rounded.centered.set-position#cypher-limit data-bottom="2320" data-left="3050" data-width="100" contenteditable="true" tabindex="0"
+      span.multiline.text.field.set-position#equipment data-bottom="650" data-left="2310" data-width="770" data-height="650" contenteditable="true" tabindex="0"
+      span.multiline.text.field.set-position#artifacts data-bottom="65" data-left="2310" data-width="770" data-height="510" contenteditable="true" tabindex="0"
 
     .actions.noprint
       a href="?print=true" target="_blank" Print

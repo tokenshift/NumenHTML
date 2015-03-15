@@ -123,12 +123,13 @@ $(function () {
 
 	$('button.save').click(onClickSave);
 
-	$('[contenteditable]').on('click focus', function (e) {
+	$('[contenteditable]:not(.multiline)').on('mouseup focus', function (e) {
 		var range = document.createRange();
 		range.selectNodeContents(e.target);
 		var sel = window.getSelection();
 		sel.removeAllRanges();
 		sel.addRange(range);
+		e.preventDefault();
 	});
 
 	$('.check.field').on('click keydown', function (e) {
